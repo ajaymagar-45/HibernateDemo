@@ -60,6 +60,7 @@ public class Main {
 		 * Delete book
 		 *#################################################################*/
 		System.out.println(b.deleteBook(2));
+         System.out.println(b.getBooks());
 		
 		
 	 }
