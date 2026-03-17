@@ -5,13 +5,15 @@
 <hibernate-configuration>
     <session-factory>
     <!-- Database connection settings -->
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateBookDemo</property>
-        <property name="hibernate.connection.username">root</property>
-        
-         <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/Hibernate
+        </property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">ajay</property>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
           <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property> 
       
